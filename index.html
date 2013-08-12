@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <meta charset="utf-8">
+    <title>Sanketh Katta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="static/css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+
+    <header id="header">
+        <div id="cover"></div>
+        <img src="static/img/sankethkatta-small.jpg">
+        <h1>Sanketh Katta</h1>
+        <h2>Data Scientist and Technology Enthusiast</h2>
+    </header>
+
+    <div id="container">
+        <div class="block-wrapper">
+            <div class="block front">
+                <div class="block-top">
+                    <h3 class="block-header">Work Experience</h3>
+                    <div class="flip-button">
+                        <div class="flip-text">Flip</div>
+                    </div>
+                </div>
+                <a class="block-main" href="http://www.linkedin.com" target="_blank">
+                    <div class="block-left">
+                        <div class="block-title">LinkedIn</div>
+                        <div class="block-description">Data Scientist</div>
+                    </div>
+                    <div class="block-right">
+                        <div class="block-logo" style="background-image: url('static/img/linkedin-logo.png')"></div>
+                    </div>
+                </a>
+                <div class="block-description2">
+                    <div class="block-description2-text">
+                        August 2013 - Present
+                    </div>
+                </div>
+            </div>
+
+            <div class="block back">
+                <div class="block-top back">
+                    <h3 class="block-header">workExperience</h3>
+                    <div class="flip-button back">
+                        <div class="flip-text">Flip</div>
+                    </div>
+                </div>
+                <div class="block-main">
+                    <pre><code>
+        {
+          "company": "LinkedIn",
+          "position": "Data Scientist",
+          "startDate": "August 2013",
+          "endDate": undefined,
+          "logo": "linkedin-logo.png",
+          "url": "http://www.linkedin.com"
+        } 
+                    </code></pre>
+                </div>
+            </div>
+        </div><!--block-wrapper-->
+
+    </div><!--contatiner-->
+
+    <footer id="foot">
+    </footer>
+
+    <script id="block-header-template" type="text/template">
+        <h3 class="block-header"><%=header%></h3>
+    </script>
+
+    <script id="work-experience-template" type="text/template">
+        <a class="block" href="<%=url%>" target="_blank">
+            <div class="block-left">
+                <div class="block-title"><%=company%></div>
+                <div class="block-description"><%=position%></div>
+                <div class="block-description2"><%=startDate%> - <%=endDate%></div>
+            </div>
+            <div class="block-right">
+                <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+            </div>
+        </a>
+    </script>
+    <script id="education-template" type="text/template">
+        <a class="block" href="<%=url%>" target="_blank">
+            <div class="block-left">
+                <div class="block-title"><%=university%></div>
+                <div class="block-description"><%=degree%></div>
+                <div class="block-description2"><%=startDate%> - <%=endDate%></div>
+            </div>
+            <div class="block-right">
+                <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+            </div>
+        </a>
+    </script>
+    <script id="social-template" type="text/template">
+        <a class="block" href="<%=url%>" target="_blank">
+            <div class="block-left">
+                <div class="block-title"><%=network%></div>
+                <div class="block-description2"><%=count%> <%=type%></div>
+            </div>
+            <div class="block-right">
+                <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+            </div>
+        </a>
+    </script>
+    <script type="text/javascript" src="static/js/sankethkatta.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="static/js/render.js"></script>
+</body>
+</html>
