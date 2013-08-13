@@ -74,21 +74,22 @@ $.each(sankethkatta.workExperience, function(i) {
 
 // Education
 $.each(sankethkatta.education, function(i) {
-  var item = sankethkatta.education[i];
-  if (!("degree" in item)) {
+    var item = sankethkatta.education[i];
+    if (!("degree" in item)) {
       item.degree = item.summerProgram;
-  } 
-      item.theJSON = syntaxHighlight(item);
-      container.append( tmpl(educationTemplate, item) );
+    } 
+    item.theJSON = syntaxHighlight(item);
+    container.append( tmpl(educationTemplate, item) );
 })
 
-/*
 // Social
-thevisual.innerHTML += tmpl(blockHeaderTemplate, {"header": "Social"});
-for (var i = 0; i < sankethkatta.socialNetworks.length; i++) {
-  thevisual.innerHTML += tmpl(socialTemplate, sankethkatta.socialNetworks[i]);
-}
-*/
+$.each(sankethkatta.socialNetworks, function(i) {
+    var item = sankethkatta.socialNetworks[i];
+    console.log(item);
+    item.theJSON = syntaxHighlight(item);
+    container.append( tmpl(socialTemplate, item) );
+})
+
 $(document).on("click", ".flip-button", function() {
     var blockWrapper = $(this).parents(".block-wrapper");
     if (blockWrapper.hasClass("flip")) {

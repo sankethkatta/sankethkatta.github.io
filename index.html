@@ -101,15 +101,37 @@
         </div><!--block-wrapper-->
     </script>
     <script id="social-template" type="text/template">
-        <a class="block" href="<%=url%>" target="_blank">
-            <div class="block-left">
-                <div class="block-title"><%=network%></div>
-                <div class="block-description2"><%=count%> <%=type%></div>
+        <div class="block-wrapper">
+            <div class="block front">
+                <div class="block-top palette-belize-hole">
+                    <h3 class="block-header">Social Networks</h3>
+                    <div class="flip-button palette-peter-river">
+                        <div class="flip-text">JSON</div>
+                    </div>
+                </div>
+                <a class="block-main" href="<%=url%>" target="_blank">
+                    <div class="block-left">
+                        <div class="block-title"><%=network%></div>
+                        <div class="block-description"><%=count%> <%=type%></div>
+                    </div>
+                    <div class="block-right">
+                        <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+                    </div>
+                </a>
             </div>
-            <div class="block-right">
-                <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+
+            <div class="block back">
+                <div class="block-top back palette-peter-river">
+                    <h3 class="block-header">socialNetworks</h3>
+                    <div class="flip-button back palette-belize-hole">
+                        <div class="flip-text">Visual</div>
+                    </div>
+                </div>
+                <div class="block-main">
+                    <pre><code><%=theJSON%></code></pre>
+                </div>
             </div>
-        </a>
+        </div><!--block-wrapper-->
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="static/js/sankethkatta.js"></script>
