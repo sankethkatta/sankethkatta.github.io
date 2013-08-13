@@ -60,7 +60,7 @@ body, html {
 
 .block-wrapper {
     width: 450px;
-    height: 243px;
+    height: 200px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -69,7 +69,7 @@ body, html {
 
 .block {
     color: #333;
-    height: 237px;
+    height: 194px;
     width: 450px;
     background-color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
@@ -117,6 +117,7 @@ body, html {
 
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .block-wrapper.flip .back {
@@ -124,47 +125,12 @@ body, html {
 
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
 }
 
 .block-main {
     display: block;
-    height: 167px;
-}
-
-.block-top {
-    color: #fff;
-    height: 40px;
-    width: 100%;
-}
-
-.block-top.back {
-    border: 0px;
-}
-
-.block-header {
-    font-size: 20px;
-    float: left;
-    margin: 0;
-    line-height: 2;
-    margin-left: 10px;
-}
-
-.flip-button {
-    float: right;
-    width: 100px;
-    height: 100%;
-    cursor: pointer;
-}
-
-.flip-button.back {
-    border: 0px;
-}
-
-.flip-text {
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 2;
+    height: 164px;
 }
 
 
@@ -247,64 +213,64 @@ body, html {
 
 /* FlatUI Colors */
 .palette-turquoise {
-  background-color: #1abc9c;
+  border-top: solid 3px #1abc9c;
 }
 .palette-green-sea {
-  background-color: #16a085;
+  border-top: solid 3px #16a085;
 }
 .palette-emerald {
-  background-color: #2ecc71;
+  border-top: solid 3px #2ecc71;
 }
 .palette-nephritis {
-  background-color: #27ae60;
+  border-top: solid 3px #27ae60;
 }
 .palette-peter-river {
-  background-color: #3498db;
+  border-top: solid 3px #3498db;
 }
 .palette-belize-hole {
-  background-color: #2980b9;
+  border-top: solid 3px #2980b9;
 }
 .palette-amethyst {
-  background-color: #9b59b6;
+  border-top: solid 3px #9b59b6;
 }
 .palette-wisteria {
-  background-color: #8e44ad;
+  border-top: solid 3px #8e44ad;
 }
 .palette-wet-asphalt {
-  background-color: #34495e;
+  border-top: solid 3px #34495e;
 }
 .palette-midnight-blue {
-  background-color: #2c3e50;
+  border-top: solid 3px #2c3e50;
 }
 .palette-sun-flower {
-  background-color: #f1c40f;
+  border-top: solid 3px #f1c40f;
 }
 .palette-orange {
-  background-color: #f39c12;
+  border-top: solid 3px #f39c12;
 }
 .palette-carrot {
-  background-color: #e67e22;
+  border-top: solid 3px #e67e22;
 }
 .palette-pumpkin {
-  background-color: #d35400;
+  border-top: solid 3px #d35400;
 }
 .palette-alizarin {
-  background-color: #e74c3c;
+  border-top: solid 3px #e74c3c;
 }
 .palette-pomegranate {
-  background-color: #c0392b;
+  border-top: solid 3px #c0392b;
 }
 .palette-clouds {
-  background-color: #ecf0f1;
+  border-top: solid 3px #ecf0f1;
 }
 .palette-silver {
-  background-color: #bdc3c7;
+  border-top: solid 3px #bdc3c7;
 }
 .palette-concrete {
-  background-color: #95a5a6;
+  border-top: solid 3px #95a5a6;
 }
 .palette-asbestos {
-  background-color: #7f8c8d;
+  border-top: solid 3px #7f8c8d;
 }
 .palette-clouds {
   color: #bdc3c7;

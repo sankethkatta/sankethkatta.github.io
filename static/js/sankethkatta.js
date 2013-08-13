@@ -132,6 +132,14 @@ var sankethkatta =
       "count": 152,
       "logo": "twitter-logo.png",
       "url": "https://twitter.com/sankethkatta"
+    },
+
+    {
+      "network": "Goodreads",
+      "type": "Books Read",
+      "count": 110,
+      "logo": "goodreads-logo.png",
+      "url": "http://www.goodreads.com/user/show/3987388-sanketh"
     }
 
   ],

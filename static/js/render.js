@@ -63,8 +63,7 @@ var educationTemplate = $("#education-template").html();
 var socialTemplate = $("#social-template").html();
 
 // Work Experience
-$.each(sankethkatta.workExperience, function(i) {
-  var item = sankethkatta.workExperience[i];
+$.each(sankethkatta.workExperience, function(i, item) {
   if (item.endDate === undefined) {
     item.endDate = "Present";
   }
@@ -73,8 +72,7 @@ $.each(sankethkatta.workExperience, function(i) {
 })
 
 // Education
-$.each(sankethkatta.education, function(i) {
-    var item = sankethkatta.education[i];
+$.each(sankethkatta.education, function(i, item) {
     if (!("degree" in item)) {
       item.degree = item.summerProgram + " (Summer Program)";
     } 
@@ -83,17 +81,25 @@ $.each(sankethkatta.education, function(i) {
 })
 
 // Social
-$.each(sankethkatta.socialNetworks, function(i) {
-    var item = sankethkatta.socialNetworks[i];
+$.each(sankethkatta.socialNetworks, function(i, item) {
     item.theJSON = syntaxHighlight(item);
     container.append( tmpl(socialTemplate, item) );
 })
 
-$(document).on("click", ".flip-button", function() {
-    var blockWrapper = $(this).parents(".block-wrapper");
-    if (blockWrapper.hasClass("flip")) {
-        $(this).parents(".block-wrapper").removeClass("flip");
-    } else {
-        $(this).parents(".block-wrapper").addClass("flip");
-    }
-})
+flipToggle = function() {
+    var blockWrapper = $(".block-wrapper");
+    var i = 0;
+    intervalId = setInterval(function() {
+        if (i === blockWrapper.length) {
+            clearInterval(intervalId);
+        } else {
+            curWrapper = $(blockWrapper[i]);
+            if (curWrapper.hasClass("flip")) {
+                $(blockWrapper[i]).removeClass("flip"); 
+            } else {
+                $(blockWrapper[i]).addClass("flip"); 
+            }
+            i++;
+        }
+    }, 250);
+}
