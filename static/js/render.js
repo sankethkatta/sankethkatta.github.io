@@ -72,18 +72,17 @@ $.each(sankethkatta.workExperience, function(i) {
   container.append( tmpl(workExperienceTemplate, item) );
 })
 
-/*
 // Education
-thevisual.innerHTML += tmpl(blockHeaderTemplate, {"header": "Education"});
-for (var i = 0; i < sankethkatta.education.length; i++) {
-  if ("degree" in sankethkatta.education[i]) {
-    thevisual.innerHTML += tmpl(educationTemplate, sankethkatta.education[i]);
-  } else {
-    sankethkatta.education[i].degree = sankethkatta.education[i].summerProgram;
-    thevisual.innerHTML += tmpl(educationTemplate, sankethkatta.education[i]);
-  }
-}
+$.each(sankethkatta.education, function(i) {
+  var item = sankethkatta.education[i];
+  if (!("degree" in item)) {
+      item.degree = item.summerProgram;
+  } 
+      item.theJSON = syntaxHighlight(item);
+      container.append( tmpl(educationTemplate, item) );
+})
 
+/*
 // Social
 thevisual.innerHTML += tmpl(blockHeaderTemplate, {"header": "Social"});
 for (var i = 0; i < sankethkatta.socialNetworks.length; i++) {

@@ -61,17 +61,44 @@
             </div>
         </div><!--block-wrapper-->
     </script>
+
     <script id="education-template" type="text/template">
-        <a class="block" href="<%=url%>" target="_blank">
-            <div class="block-left">
-                <div class="block-title"><%=university%></div>
-                <div class="block-description"><%=degree%></div>
-                <div class="block-description2"><%=startDate%> - <%=endDate%></div>
+        <div class="block-wrapper">
+            <div class="block front">
+                <div class="block-top palette-alizarin">
+                    <h3 class="block-header">Education</h3>
+                    <div class="flip-button palette-pomegranate">
+                        <div class="flip-text">JSON</div>
+                    </div>
+                </div>
+                <a class="block-main" href="<%=url%>" target="_blank">
+                    <div class="block-left education">
+                        <div class="block-title"><%=university%></div>
+                        <div class="block-description"><%=degree%></div>
+                    </div>
+                    <div class="block-right education">
+                        <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+                    </div>
+                </a>
+                <div class="block-description2">
+                    <div class="block-description2-text">
+                        <%=startDate%> - <%=endDate%>
+                    </div>
+                </div>
             </div>
-            <div class="block-right">
-                <div class="block-logo" style="background-image: url('static/img/<%=logo%>')"></div>
+
+            <div class="block back">
+                <div class="block-top back palette-pomegranate">
+                    <h3 class="block-header">education</h3>
+                    <div class="flip-button back palette-alizarin">
+                        <div class="flip-text">Visual</div>
+                    </div>
+                </div>
+                <div class="block-main">
+                    <pre><code><%=theJSON%></code></pre>
+                </div>
             </div>
-        </a>
+        </div><!--block-wrapper-->
     </script>
     <script id="social-template" type="text/template">
         <a class="block" href="<%=url%>" target="_blank">

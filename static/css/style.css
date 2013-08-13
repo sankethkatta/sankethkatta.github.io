@@ -68,7 +68,7 @@ body, html {
     display: block;
     clear: both;
     color: #333;
-    height: 240px;
+    height: 237px;
     width: 450px;
     background-color: #fff;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
@@ -127,7 +127,7 @@ body, html {
 
 .block-main {
     display: block;
-    height: 170px;
+    height: 167px;
     width: 450px;
 }
 
@@ -180,6 +180,14 @@ body, html {
     margin-right: 20px;
 }
 
+.education.block-left {
+    margin-top: 25px;
+}
+
+.education.block-right {
+    margin-top: 45px;
+}
+
 .block a {
     text-decoration: none;
     color: #333;
@@ -195,16 +203,19 @@ body, html {
     margin: 0px;
     color: #b9ca4a;
     padding: 30px;
+    overflow: hidden;
 }
 
 .block-title {
     font-weight: bold;
     font-size: 30px;
+    max-width: 250px;
 }
 
 .block-description {
     font-size: 20px;
     color: #777;
+    max-width: 340px;
 }
 
 .block-description2 {
