@@ -50,7 +50,7 @@ body, html {
 }
 
 #container {
-    width: 700px;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     padding: 0px 20px;
@@ -59,6 +59,9 @@ body, html {
 .block-wrapper {
     width: 450px;
     height: 243px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: left;
 }
 
 .block {
@@ -83,11 +86,11 @@ body, html {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
 
-    -o-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 .block.back {
@@ -101,11 +104,11 @@ body, html {
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
 
-    -o-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 .block-wrapper.flip .front {
@@ -129,14 +132,12 @@ body, html {
 }
 
 .block-top {
-    background-color: #1abc9c;
     color: #fbfbfb;
     height: 40px;
     width: 100%;
 }
 
 .block-top.back {
-    background-color: #16a085;
     border: 0px;
 }
 
@@ -144,7 +145,7 @@ body, html {
     font-size: 20px;
     float: left;
     margin: 0;
-    margin-top: 5px;
+    line-height: 2;
     margin-left: 10px;
 }
 
@@ -152,12 +153,10 @@ body, html {
     float: right;
     width: 100px;
     height: 100%;
-    background-color: #16a085;
     cursor: pointer;
 }
 
 .flip-button.back {
-    background-color: #1abc9c;
     border: 0px;
 }
 
@@ -165,7 +164,7 @@ body, html {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 5px;
+    line-height: 2;
 }
 
 
@@ -194,7 +193,8 @@ body, html {
 
 .block-main pre {
     margin: 0px;
-    color: #fbfbfb;
+    color: #b9ca4a;
+    padding: 30px;
 }
 
 .block-title {
@@ -215,7 +215,7 @@ body, html {
 
 .block-description2-text {
     text-align: center;
-    padding-top: 6px;
+    line-height: 2.5;
 }
 
 .block-logo {
@@ -224,4 +224,77 @@ body, html {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.key {
+    color: #6A9FB5;
+}
+
+.string {
+    color: #F4BF75;
+}
+
+/* FlatUI Colors */
+.palette-turquoise {
+  background-color: #1abc9c;
+}
+.palette-green-sea {
+  background-color: #16a085;
+}
+.palette-emerald {
+  background-color: #2ecc71;
+}
+.palette-nephritis {
+  background-color: #27ae60;
+}
+.palette-peter-river {
+  background-color: #3498db;
+}
+.palette-belize-hole {
+  background-color: #2980b9;
+}
+.palette-amethyst {
+  background-color: #9b59b6;
+}
+.palette-wisteria {
+  background-color: #8e44ad;
+}
+.palette-wet-asphalt {
+  background-color: #34495e;
+}
+.palette-midnight-blue {
+  background-color: #2c3e50;
+}
+.palette-sun-flower {
+  background-color: #f1c40f;
+}
+.palette-orange {
+  background-color: #f39c12;
+}
+.palette-carrot {
+  background-color: #e67e22;
+}
+.palette-pumpkin {
+  background-color: #d35400;
+}
+.palette-alizarin {
+  background-color: #e74c3c;
+}
+.palette-pomegranate {
+  background-color: #c0392b;
+}
+.palette-clouds {
+  background-color: #ecf0f1;
+}
+.palette-silver {
+  background-color: #bdc3c7;
+}
+.palette-concrete {
+  background-color: #95a5a6;
+}
+.palette-asbestos {
+  background-color: #7f8c8d;
+}
+.palette-clouds {
+  color: #bdc3c7;
 }

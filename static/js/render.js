@@ -34,22 +34,45 @@
   };
 })();
 
-/*
-var thevisual = document.getElementById("thevisual");
-var blockHeaderTemplate = document.getElementById("block-header-template").innerHTML;
-var workExperienceTemplate = document.getElementById("work-experience-template").innerHTML;
-var educationTemplate = document.getElementById("education-template").innerHTML;
-var socialTemplate = document.getElementById("social-template").innerHTML;
-
-// Work Experience
-thevisual.innerHTML += tmpl(blockHeaderTemplate, {"header": "Work Experience"});
-for (var i = 0; i < sankethkatta.workExperience.length; i++) {
-  if (sankethkatta.workExperience[i].endDate === undefined) {
-    sankethkatta.workExperience[i].endDate = "Present";
-  }
-  thevisual.innerHTML += tmpl(workExperienceTemplate, sankethkatta.workExperience[i]);
+// From StackOverflow: http://stackoverflow.com/questions/4810841/json-pretty-print-using-javascript
+function syntaxHighlight(json) {
+    if (typeof json != 'string') {
+         json = JSON.stringify(json, undefined, 2);
+    }
+    json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+        var cls = 'number';
+        if (/^"/.test(match)) {
+            if (/:$/.test(match)) {
+                cls = 'key';
+            } else {
+                cls = 'string';
+            }
+        } else if (/true|false/.test(match)) {
+            cls = 'boolean';
+        } else if (/null/.test(match)) {
+            cls = 'null';
+        }
+        return '<span class="' + cls + '">' + match + '</span>';
+    });
 }
 
+var container = $("#container");
+var workExperienceTemplate = $("#work-experience-template").html();
+var educationTemplate = $("#education-template").html();
+var socialTemplate = $("#social-template").html();
+
+// Work Experience
+$.each(sankethkatta.workExperience, function(i) {
+  var item = sankethkatta.workExperience[i];
+  if (item.endDate === undefined) {
+    item.endDate = "Present";
+  }
+  item.theJSON = syntaxHighlight(item);
+  container.append( tmpl(workExperienceTemplate, item) );
+})
+
+/*
 // Education
 thevisual.innerHTML += tmpl(blockHeaderTemplate, {"header": "Education"});
 for (var i = 0; i < sankethkatta.education.length; i++) {
