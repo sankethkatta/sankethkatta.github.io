@@ -61,14 +61,13 @@ body, html {
 .block-wrapper {
     width: 450px;
     height: 243px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
     float: left;
 }
 
 .block {
-    display: block;
-    clear: both;
     color: #333;
     height: 237px;
     width: 450px;
@@ -311,10 +310,14 @@ body, html {
   color: #bdc3c7;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 470px) {
+    #container {
+        width: 370px;
+    }
 
     .block {
         width: 350px;
+        margin-left: 0px;
     }
 
     .block-wrapper {
@@ -340,26 +343,26 @@ body, html {
     }
 }
 
-@media (min-width: 490px) {
+@media (min-width: 470px) {
     #container {
-        width: 490px;
+        width: 470px;
     }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 940px) {
     #container {
-        width: 960px;
+        width: 940px;
     }
 }
 
-@media (min-width: 1430px) {
+@media (min-width: 1410px) {
     #container {
-        width: 1430px;
+        width: 1410px;
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1880px) {
     #container {
-        width: 100%;
+        width: 1880px;
     }
 }
