@@ -91,7 +91,7 @@ var sankethkatta =
 
     { 
       "university": "London School of Economics",
-      "summerProgram": "IT and Internet-driven Innovation",
+      "summerProgram": "Building Digital Enterprises",
       "startDate": "July 2011",
       "endDate": "August 2011",
       "logo": "lseseal.png",

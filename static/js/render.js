@@ -76,7 +76,7 @@ $.each(sankethkatta.workExperience, function(i) {
 $.each(sankethkatta.education, function(i) {
     var item = sankethkatta.education[i];
     if (!("degree" in item)) {
-      item.degree = item.summerProgram;
+      item.degree = item.summerProgram + " (Summer Program)";
     } 
     item.theJSON = syntaxHighlight(item);
     container.append( tmpl(educationTemplate, item) );
@@ -85,7 +85,6 @@ $.each(sankethkatta.education, function(i) {
 // Social
 $.each(sankethkatta.socialNetworks, function(i) {
     var item = sankethkatta.socialNetworks[i];
-    console.log(item);
     item.theJSON = syntaxHighlight(item);
     container.append( tmpl(socialTemplate, item) );
 })
