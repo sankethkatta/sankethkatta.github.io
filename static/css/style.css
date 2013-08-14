@@ -211,6 +211,29 @@ body, html {
     color: #F4BF75;
 }
 
+#modes {
+    margin-bottom: 50px;
+    cursor: pointer;
+    height: 70px;
+    width: 190px;
+}
+
+.button {
+    background-color: #95a5a6;
+    color: #bdc3c7;
+    width: 75px;
+    height: 25px;
+    padding: 5px 10px 5px 10px;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.active {
+    color: #fff;
+    background-color: #34495e;
+}
+
 /* FlatUI Colors */
 .palette-turquoise {
   border-top: solid 3px #1abc9c;

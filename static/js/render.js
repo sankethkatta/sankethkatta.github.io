@@ -86,15 +86,20 @@ $.each(sankethkatta.socialNetworks, function(i, item) {
     container.append( tmpl(socialTemplate, item) );
 })
 
-flipToggle = function() {
+flipToggle = function(mode) {
     var blockWrapper = $(".block-wrapper");
     var i = 0;
     intervalId = setInterval(function() {
         if (i === blockWrapper.length) {
             clearInterval(intervalId);
+            if (mode === "visual") {
+                $("#json-button").removeClass("disabled");
+            } else {
+                $("#visual-button").removeClass("disabled");
+            }
         } else {
             curWrapper = $(blockWrapper[i]);
-            if (curWrapper.hasClass("flip")) {
+            if (mode === "visual") {
                 $(blockWrapper[i]).removeClass("flip"); 
             } else {
                 $(blockWrapper[i]).addClass("flip"); 
@@ -103,3 +108,21 @@ flipToggle = function() {
         }
     }, 250);
 }
+
+$(document).on("click", "#json-button", function() {
+    if (!($(this).hasClass("active")) && !($(this).hasClass("disabled"))) {
+        $("#visual-button").removeClass("active");
+        $("#visual-button").addClass("disabled");
+        $(this).addClass("active");
+        flipToggle("json");
+    }
+});
+
+$(document).on("click", "#visual-button", function() {
+    if (!($(this).hasClass("active")) && !($(this).hasClass("disabled"))) {
+        $("#json-button").removeClass("active");
+        $("#json-button").addClass("disabled");
+        $(this).addClass("active");
+        flipToggle("visual");
+    }
+});
