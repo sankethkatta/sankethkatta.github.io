@@ -12,9 +12,8 @@ body, html {
 
 #container {
     width: 100%;
-    height: 100%;
-    min-height: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 
@@ -160,6 +159,17 @@ body, html {
     color: #333;
 } 
 
+.palette-turquoise a:hover .block-left {
+    color: #1abc9c;
+}
+
+.palette-alizarin a:hover .block-left {
+    color: #e74c3c;
+}
+
+.palette-peter-river a:hover .block-left {
+    color: #3498db;
+}
 
 .back {
     background-color: #333;
@@ -177,6 +187,11 @@ body, html {
     font-weight: bold;
     font-size: 30px;
     max-width: 300px;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .block-description {
@@ -259,14 +274,12 @@ body, html {
     transition: all .8s ease-in-out;
 }
 
-/*
 #foot {
     width: 100%;
     height: 40px;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.06);
 }
-*/
 
 /* FlatUI Colors */
 .palette-turquoise {
