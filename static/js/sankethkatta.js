@@ -121,7 +121,7 @@ var sankethkatta =
     {
       "network": "Facebook",
       "type": "Friends",
-      "count": 898,
+      "count": 933,
       "logo": "facebook-logo.png",
       "url": "https://www.facebook.com/sankethkatta"
     },
@@ -129,7 +129,7 @@ var sankethkatta =
     {
       "network": "Twitter",
       "type": "Followers",
-      "count": 152,
+      "count": 164,
       "logo": "twitter-logo.png",
       "url": "https://twitter.com/sankethkatta"
     },
@@ -137,7 +137,7 @@ var sankethkatta =
     {
       "network": "Goodreads",
       "type": "Books Read",
-      "count": 110,
+      "count": 124,
       "logo": "goodreads-logo.png",
       "url": "http://www.goodreads.com/user/show/3987388-sanketh"
     }
