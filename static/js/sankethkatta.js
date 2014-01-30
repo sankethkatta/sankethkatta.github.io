@@ -113,7 +113,7 @@ var sankethkatta =
     {
       "network": "LinkedIn",
       "type": "Connections",
-      "count": 557,
+      "count": 685,
       "logo": "linkedin-logo.png",
       "url": "http://www.linkedin.com/in/sankethkatta"
     },
