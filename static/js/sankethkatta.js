@@ -6,8 +6,17 @@ var sankethkatta =
     {
       "company": "LinkedIn",
       "position": "Data Scientist",
-      "startDate": "August 2013",
+      "startDate": "May 2014",
       "endDate": undefined,
+      "logo": "linkedin-logo.png",
+      "url": "http://www.linkedin.com"
+    }, 
+
+    {
+      "company": "LinkedIn",
+      "position": "Associate Data Scientist",
+      "startDate": "August 2013",
+      "endDate": "April 2014",
       "logo": "linkedin-logo.png",
       "url": "http://www.linkedin.com"
     }, 
@@ -113,7 +122,7 @@ var sankethkatta =
     {
       "network": "LinkedIn",
       "type": "Connections",
-      "count": 685,
+      "count": 727,
       "logo": "linkedin-logo.png",
       "url": "http://www.linkedin.com/in/sankethkatta"
     },
@@ -121,7 +130,7 @@ var sankethkatta =
     {
       "network": "Facebook",
       "type": "Friends",
-      "count": 933,
+      "count": 946,
       "logo": "facebook-logo.png",
       "url": "https://www.facebook.com/sankethkatta"
     },
@@ -129,7 +138,7 @@ var sankethkatta =
     {
       "network": "Twitter",
       "type": "Followers",
-      "count": 164,
+      "count": 175,
       "logo": "twitter-logo.png",
       "url": "https://twitter.com/sankethkatta"
     },
@@ -137,7 +146,7 @@ var sankethkatta =
     {
       "network": "Goodreads",
       "type": "Books Read",
-      "count": 124,
+      "count": 128,
       "logo": "goodreads-logo.png",
       "url": "http://www.goodreads.com/user/show/3987388-sanketh"
     }
