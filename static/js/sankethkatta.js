@@ -122,7 +122,7 @@ var sankethkatta =
     {
       "network": "LinkedIn",
       "type": "Connections",
-      "count": 727,
+      "count": 850,
       "logo": "linkedin-logo.png",
       "url": "http://www.linkedin.com/in/sankethkatta"
     },
@@ -130,7 +130,7 @@ var sankethkatta =
     {
       "network": "Facebook",
       "type": "Friends",
-      "count": 946,
+      "count": 968,
       "logo": "facebook-logo.png",
       "url": "https://www.facebook.com/sankethkatta"
     },
@@ -138,7 +138,7 @@ var sankethkatta =
     {
       "network": "Twitter",
       "type": "Followers",
-      "count": 175,
+      "count": 176,
       "logo": "twitter-logo.png",
       "url": "https://twitter.com/sankethkatta"
     },
@@ -146,7 +146,7 @@ var sankethkatta =
     {
       "network": "Goodreads",
       "type": "Books Read",
-      "count": 128,
+      "count": 139,
       "logo": "goodreads-logo.png",
       "url": "http://www.goodreads.com/user/show/3987388-sanketh"
     }
