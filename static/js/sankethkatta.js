@@ -148,7 +148,7 @@ var sankethkatta =
       "type": "Books Read",
       "count": 139,
       "logo": "goodreads-logo.png",
-      "url": "http://www.goodreads.com/user/show/3987388-sanketh"
+      "url": "https://www.goodreads.com/sankethkatta"
     }
 
   ],
