@@ -25,8 +25,7 @@ body, html {
 #cover {
     width: 100%;
     height: 200px;
-    background: url("../img/cover-low.jpg") center center no-repeat;
-    background-size: cover;
+    background: url("../img/cover-low.jpg") center center /cover no-repeat;
     margin-bottom: -70px;
 }
 
@@ -353,7 +352,7 @@ body, html {
 
     #cover {
         height: 200px;
-        background: url("../img/cover-low.jpg") 50% 90% no-repeat;
+        background: url("../img/cover-low.jpg") 50% 90% /cover no-repeat;
     }
 
     .block {
@@ -400,7 +399,7 @@ body, html {
 
     #cover {
         height: 250px;
-        background: url("../img/cover-low.jpg") 15% 100% no-repeat;
+        background: url("../img/cover-low.jpg") 15% 100% /cover no-repeat;
     }
 
     #legend {
@@ -420,7 +419,7 @@ body, html {
 
     #cover {
         height: 250px;
-        background: url("../img/cover-high.jpg") 15% 80% no-repeat;
+        background: url("../img/cover-high.jpg") 15% 80% /cover no-repeat;
     }
 
     #legend {
@@ -440,7 +439,7 @@ body, html {
 
     #cover {
         height: 350px;
-        background: url("../img/cover-high.jpg") 15% 80% no-repeat;
+        background: url("../img/cover-high.jpg") 15% 80% /cover no-repeat;
     }
 }
 
