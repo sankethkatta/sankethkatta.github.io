@@ -53,8 +53,10 @@
   }
 
   // Retrieve data and render blocks
-  $.get('/static/data/sankethkatta.json', function(data) {
-    // Render data items
+  var request = new XMLHttpRequest();
+  request.open('GET', '/static/data/sankethkatta.json', true);
+  request.onload = function() {
+    var data = JSON.parse(request.responseText);
     render(data.workExperience, 'work-experience-template', function(item) {
       if (!item.endDate) {
         item.endDate = 'Present';
@@ -66,7 +68,8 @@
       }
     });
     render(data.education, 'social-template');
-  });
+  };
+  request.send();
 
   // Click listeners
   $jsonButton.addEventListener('click', function() {
