@@ -63,7 +63,7 @@
   function getData(callback) {
     var request = new XMLHttpRequest();
     request.open('GET', '/static/data/sankethkatta.json', true);
-    request.onreadystatechange = function() {
+    request.onload = function() {
       callback(JSON.parse(request.responseText));
     };
     request.send();
@@ -111,7 +111,7 @@
         item.degree = item.summerProgram + ' (Summer Program)';
       }
     });
-    render(data.education, 'social-template');
+    render(data.socialNetworks, 'social-template');
   });
 
   // Click listeners
