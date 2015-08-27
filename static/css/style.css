@@ -15,7 +15,6 @@ body, html {
 #container {
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 /* Cover image header */
@@ -158,7 +157,7 @@ body, html {
 .block a {
   text-decoration: none;
   color: #333;
-} 
+}
 
 .palette-turquoise a:hover .block-left {
   color: #1abc9c;
@@ -276,14 +275,6 @@ body, html {
   -moz-transition: all .8s ease-in-out;
   -webkit-transition: all .8s ease-in-out;
   transition: all .8s ease-in-out;
-}
-
-/* Page footer */
-#foot {
-  width: 100%;
-  height: 40px;
-  margin-top: 50px;
-  background-color: rgba(0, 0, 0, 0.06);
 }
 
 /* FlatUI Colors */
