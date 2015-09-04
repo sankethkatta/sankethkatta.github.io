@@ -115,6 +115,8 @@
   });
 
   // Click listeners
+  // 'active' means the button is the current selection
+  // 'disabled' is when the flipping is in progress, to prevent duplicate flips
   $jsonButton.addEventListener('click', function() {
     if (
         !(this.classList.contains('active')) &&
@@ -128,7 +130,6 @@
   });
 
   $visualButton.addEventListener('click', function() {
-    // Only trigger if this is not*
     if (
         !(this.classList.contains('active')) &&
         !(this.classList.contains('disabled'))
@@ -139,6 +140,5 @@
       flipAll('visual');
     }
   });
-
 
 })();
