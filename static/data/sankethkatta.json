@@ -121,7 +121,7 @@
     {
       "network": "LinkedIn",
       "type": "Connections",
-      "count": 850,
+      "count": 955,
       "logo": "linkedin-logo.png",
       "url": "http://www.linkedin.com/in/sankethkatta"
     },
@@ -129,7 +129,7 @@
     {
       "network": "Facebook",
       "type": "Friends",
-      "count": 968,
+      "count": 994,
       "logo": "facebook-logo.png",
       "url": "https://www.facebook.com/sankethkatta"
     },
@@ -137,7 +137,7 @@
     {
       "network": "Twitter",
       "type": "Followers",
-      "count": 176,
+      "count": 177,
       "logo": "twitter-logo.png",
       "url": "https://twitter.com/sankethkatta"
     },
@@ -145,7 +145,7 @@
     {
       "network": "Goodreads",
       "type": "Books Read",
-      "count": 139,
+      "count": 151,
       "logo": "goodreads-logo.png",
       "url": "https://www.goodreads.com/sankethkatta"
     }
