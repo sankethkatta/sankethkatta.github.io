@@ -3,10 +3,19 @@
   "workExperience": [
 
     {
+      "company": "Smartcar",
+      "position": "CTO + Founder",
+      "startDate": "January 2015",
+      "endDate": null,
+      "logo": "smartcar-logo.png",
+      "url": "https://smartcar.com"
+    },
+
+    {
       "company": "LinkedIn",
       "position": "Data Scientist",
       "startDate": "May 2014",
-      "endDate": null,
+      "endDate": "January 2015",
       "logo": "linkedin-logo.png",
       "url": "http://www.linkedin.com"
     },
